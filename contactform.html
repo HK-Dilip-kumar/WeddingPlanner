@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="Css/contactform.css" />
+<script type="text/javascript">
+function toggleClass()
+{
+var element=document.getElementById('contact');
+element.classList.toggle("active");
+}
+</script>
+<script>
+function validateForm()
+{
+var name=document.myform.uname.value;
+var lastname=document.myform.lname.value;
+var mail=document.myform.umail.value;
+var tel=document.myform.utel.value;
+
+if(name==0 || lastname==0 || mail==0 || tel==0)
+{
+alert("Fields cannot be Empty");
+return false;
+}
+if(name.length<=2 && name.length>20)
+{
+alert("Name should be between 2-20");
+return false;
+}
+if(!isNaN(tel))
+{
+alert("You can Enter only numbers here");
+return false;
+}
+if(tel.length<10 && tel.length>10)
+{
+alert("Your number should be exactly of length 10");
+return false;
+}
+}
+</script>
+
+</head>
+
+<body background="Image/back.jpg" style="height:1000px;width:100%;background-attachment:fixed;">
+<div class="navbar" id="myTonav">
+<h3>India's Favourite wedding planning website</h3>  
+</div>
+<div class="topnav">
+	<a href="demo.html">Home</a>
+  <a href="aboutus.html">About</a>
+<a href="index.html">Vendor</a>
+<a href="contactform.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+<a href="blog1.html">Blog</a>
+<a href="signup.html"><i class="fa fa-fw fa-user"></i>Login</a>
+
+</div>
+<br />
+<br />
+<div class="contact">
+<br />
+<br />
+<br />
+<br />
+<h2 onclick="toggleClass()">Get In Touch With Us<Span>+</Span></h2>
+<br />
+<br /><br /><br />
+<form name="myform" onsubmit="return validateForm()" method="post">
+<div class="row">
+<div class="col-2">
+<label>First Name</label>
+<input type="text" name="uname" class="text" placeholder="John" />
+</div>
+<div class="col-2">
+<label>Last Name</label>
+<input type="text" name="lname" class="text" placeholder="Singh" />
+</div>
+<div class="col-2">
+<label>Email</label>
+<input type="email" name="umail" class="text" placeholder="John123@gmail.com" />
+</div>
+<div class="col-2">
+<label>Telephone</label>
+<input type="text" name="utel" class="text" placeholder="+91-9876753300" />
+</div>
+</div>
+<div class="row">
+<div class="col-1">
+<label>Your Message</label>
+<textarea placeholder="Enter Some Message here...."></textarea>
+</div>
+</div>
+<div class="row">
+<div class="col-1">
+<input type="submit" type="Submit" value="Submit" onclick="validateForm()">
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>

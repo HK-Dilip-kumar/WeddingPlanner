@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <script>
+    var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "demo.html"
+    })
+    .when("/about", {
+        templateUrl : "aboutus.html"
+    })
+    .when("/vendor", {
+        templateUrl : "index.html"
+    })
+    .when("/contact", {
+        templateUrl : "booking.html"
+    });
+    .when("/blog", {
+        templateUrl : "booking.html"
+    });
+    .when("/login", {
+        templateUrl : "signup.html"
+    });
+
+});
+
+
+
+</script>
+
+
+
+  </script>
+
+	<div class="nav_1">
+    <p class="nav_12" style="color: white;">India's Favourite Wedding Planning Platform</p>
+    <p class="nav_123">Write a Review</p>
+    <p class="nav_1234">Download App</p>
+  </div>
+  <div class="topnav">
+  <a href="demo.html">Home</a>
+  <a href="aboutus.html">About</a>
+<a href="index.html">Vendor</a>
+<a href="booking.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+<a href="booking.html">Blog</a>
+<a href="signup.html"><i class="fa fa-fw fa-user"></i>Login</a>
+  </div>
+  <div class="booking" style="height: 400px;width: 1505px">
+  	<img src="images/booking.png" style="width: 100%; padding-left: 30px;padding-top: 20px">
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   <br>
+   <br>
+   <br>
+
+
+    <div class="footer">
+  <hr>
+  <div class="footer1">
+  <b>Plan your wedding with Us</b>
+  <p>This is an Indian Wedding Planning Website and app where you can find the best wedding vendors, with prices and reviews at the click of a button. Whether you are looking to hire wedding planners in India, or looking for the top photographers, or just some ideas and inspiration for your wedding. WedMeGood can help you solve your wedding planning woes through its unique features. With a checklist, detailed vendor list, inspiration gallery and blog - you won't need to spend hours planning a wedding anymore.</p>  
+    <img src="images/capture.png">
+</div>
+  <div class="footer5">
+    <h3>Get Latest Blog Alerts</h3>
+    <input type="text" name="Email" placeholder="Email*" style="height: 50px;width:500px; padding-left: 10px; "><a href="signup.html"><input type="submit" name="submit" value="submit" style="color:white;float: left;height: 50px;margin-left: 500px; margin-top: -50px; width: 90px;background-color: #cc0066; border-style: none;"></a>
+    <br>
+    <br>
+    <img src="images/follow.png">
+
+    <input type="submit" name="submit" value="submit Weeding" style="color:white;float: left;height: 50px; width:200px; padding: 10px;height: 60px ;background-color: #cc0066; margin-top: 20px; border-style: none;">
+    <input type="submit" name="submit" value="Register as a vendor"    style="color:white;float: left;height: 50px; width:200px; padding: 10px;height: 60px ;background-color: blue; margin-top: 20px; border-style: none; margin-left: 300px; margin-top: -60px;">
+
+
+
+
+
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="theme.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style>
+
+</style>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeIn();
+$("#div2").fadeIn("fast");
+$("#div3").fadeIn(7000,fun1());
+});
+});
+function fun1()
+{
+$("#p1").text("Hello");
+}
+</script>
+</head>
+<body>
+<div class="navbar" id="myTopnav">
+<h3>India's Favourite wedding planning website</h3>  
+</div>
+<div class="topnav">
+	<a href="#" >Home</a>
+	<a href="#" >About</a>
+    <div class="dropdown">
+	<button class="dropbtn">Vendors
+	<i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+	<a href="#">Wedding Venue</a>
+	<a href="#">Bride Makeup</a>
+	<a href="#">Groove Makeup</a>
+	<a href="#">Wedding Cards</a>
+	<a href="#">Wedding Decorators</a>	</div>
+	</div>
+	
+	
+    <a href="#">Photos</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+	<a href="#">Blog</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<br />
+<br />
+<br />
+<div class="first">
+
+
+</div>
+<div class="second">
+
+
+
+</div>
+<div class="third">
+
+</div>
+<div class="head">
+
+
+
+
+</div>
+<button>Theme 1</button>
+<br /><br /><br />
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;">
+</div>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;">
+</div>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:yellow;">
+</div>
+
+<button>Theme 1</button>
+<br /><br /><br />
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;">
+</div>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;">
+</div>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:yellow;">
+</div>
+
+
+
+
+
+</body>
+</html>

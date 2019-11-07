@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAYMENT GATEWAY</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav_1{
+			background-color: #E91E63;
+		}
+		.nav_12{
+			float: left;
+			margin-left: 650px;
+		}
+		.nav_123{
+			float:left;
+			margin-left: 250px;
+			margin-right: 70px;
+		}
+		.main_menu{
+			width: 100%;
+			background-color: #FF80AA;
+			height: 50px;
+			padding-top: 20px;
+			}
+			.main_menu a{
+				font-size: 20px;
+					text-align: left;
+					text-decoration: none;
+					color: white;
+					margin-left: 30px;
+					margin-top: -30px;
+			}
+			.container{
+			}
+			.container_1{
+				width: 700px;
+				float: left;
+			}
+			.container_2{
+				margin-left: 900px;
+				height: 200px;
+				width: 700px;
+				margin-top: 0px;
+			}
+			.no_wrap{
+				width: 500px;
+				margin-right: 
+			}
+			/*this is the bootstrap*/ 
+			.btn-primary {
+				  color: #fff;
+				  background-color: #007bff;
+				  border-radius: 35px;
+				  padding: 8px 20px;
+				  border: 3px solid rgba(0, 70, 147, 0.75);
+					}
+			.btn-success {
+				  color: #fff;
+				  background-color: #28a745;
+				  border-radius: 35px;
+				  padding: 8px 20px;
+				  border: 3px solid rgba(21, 87, 36, 0.75);
+				}
+				.form_form1{
+					height: 500px;
+					width: 400px;
+				}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="nav_1" >
+		<p class="nav_12" style="color: white;">India's Favourite Wedding Planning Platform</p>
+		<p class="nav_123">Write a Review</p>
+		<p class="nav_1234">Download App</p>
+	</div>
+	<div class="main_menu" style="margin-top: -12px">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Vendors</a>
+			<a href="#">Photos</a>
+			<a href="#">Contact</a>
+			<a href="#">Login</a>			
+		</ul>
+	</div>
+	<div class="conatiner">
+					<div class="container_1">
+							<a href="#"><img src="imag/payment_1.png" width="820px"></a>
+					</div>
+					
+					<div class="container_2" style="padding-top: 80px;">
+							<img src="imag/bes_price_payment.png" width="500px;">
+							<!-- <div>
+								<button class="btn peach-gradient">OFFERS</button>
+								<button class="btn purple-gradient">DISCOUNTS</button>
+								<button class="btn blue-gradient">BEST PRICES</button>
+								<button class="btn aqua-gradient">Aqua</button>
+							</div> -->
+							<p class="no_wrap">
+							<span>Starting Price</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Pricing Info</button><span></p>
+							</p>
+							<div id="demo" class="collapse" >
+							<img src="imag/price_tag.png" width="450px;">
+							</div>
+
+							<div>
+								<span>
+								<button type="button" class="btn btn-primary" style="">&#9743 &nbsp&nbspSend a Message</button>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button type="button" class="btn btn-success">View Contact</button>
+								</span>
+							</div>
+							<div class="form_form1">
+								<h5 style="color: red;">**FILL UP THE FORM TO GET INSTANT BOOKING**</h5>
+								<form name="form_1">
+									<label style="margin-top: 10px;margin-left: 2px;">Name:</label>
+									<input style="border-radius: 40px;margin-left: 60px;" type="text" name="first_name" placeholder="enter your name..."><br>
+									<label style="margin-top: 0px;margin-left: 2px;">Phone Number:</label>
+									<input style="border-radius: 40px;margin-left: 2px;" type="number" name="" placeholder="enter ur number..."><br>
+									<label style="margin-top: 0px;margin-left: 2px;">Email:</label>
+									<input  style="border-radius: 40px;margin-left: 65px;"type="email"name="" placeholder="enter ur email..."><br>
+									<label style="margin-left: 2px;">Function Date:</label>
+									<input  style="border-radius: 40px;margin-left: 12px;"type="date" placeholder="Function Date">
+								</form>
+								<button onclick="function_1()"><img style="width: 350px;margin-top: 0px;" src="imag/availabilty_check.png"></button>
+							</div>
+						</div>
+	</div>
+	<img style="margin-left:2px;" src="imag/footer_1.png" width="1500px;">		
+</body>
+<script>
+	function function_1()
+	{
+		alert("Your Token has been generated #2398")
+	}
+</script>
+</html>

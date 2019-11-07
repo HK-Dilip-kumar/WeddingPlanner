@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="contactform.css" />
+<script type="text/javascript">
+function toggleClass()
+{
+var element=document.getElementById('contact');
+element.classList.toggle("active");
+}
+</script>
+<script>
+	function validate()
+		{
+			
+			firstname=document.getElementById('firstname').value;
+			lastname=document.getElementById('lastname').value;
+			
+			email=document.getElementById('email').value;
+			telephone=document.getElementById('telephone').value;
+			
+			
+			atposition=email1.indexOf("@");  
+			dotposition=email1.lastIndexOf(".");
+
+
+
+	if(firstname==0 || lastname==0 || email==0 || telephone==0 )
+			{
+				alert("Please fill in the details");
+			}	
+	        else if(isNaN(firstname)==0)
+			{
+				alert("Name cannot be only numeric");
+			}
+			else if(isNaN(lastname)==0)
+			{
+				alert("Name cannot be only numeric");
+			}
+			else if(isNaN(telephone)==1)
+			{
+				alert("	telephone can only be numeric");
+			}
+			else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+			{  
+				alert("Please enter a valid email address");
+			} 
+			
+			else
+			{
+				alert("Login Successful");
+			}
+		}
+	</script>
+
+
+</head>
+
+<body background="back.jpg" >
+<div class="navbar" id="myTonav">
+<h3>India's Favourite wedding planning website</h3>  
+</div>
+<div class="topnav">
+	<a href="#" >Home</a>
+	<a href="#" >About</a>
+    <a href="#" >Vendors</a>
+    <a href="#">Photos</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+	<a href="#">Blog</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<br />
+<br />
+<div class="contact">
+
+<h2>Get In Touch With Us<Span>+</Span></h2>
+<br />
+<br /><br /><br />
+<form name="myform" method="post">
+<div class="row">
+<div class="col-2">
+<label>First Name</label>
+<input type="text" name="uname" class="text" placeholder="First name*" id="firstname" />
+</div>
+<div class="col-2">
+<label>Last Name</label>
+<input type="text" name="lname" class="text" placeholder="Last name*" id="lastname" />
+</div>
+<div class="col-2">
+<label>Email</label>
+<input type="email" name="umail" class="text" placeholder="Email*" id="email"/>
+</div>
+<div class="col-2">
+<label>Telephone</label>
+<input type="text" name="utel" class="text" placeholder="telephone*" id="telephone">
+</div>
+</div>
+<div class="row">
+<div class="col-1">
+<label>Your Message</label>
+<textarea placeholder="Enter Some Message here...."></textarea>
+</div>
+</div>
+<div class="row">
+<div  class="col-1">
+<input type="Submit" value="contact us"  onClick="validate()">
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>

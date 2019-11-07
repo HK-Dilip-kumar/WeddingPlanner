@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+	<title></title>
+
+  
+
+<body ng-app="myApp">
+
+
+ <script>
+var i = 0;
+var txt = 'Wedding Photographers in India |Bridal Makeup in India | Wedding Cards in India | Wedding Venues in India.';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script> 
+
+<script >
+
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "demo.html"
+    })
+    .when("/about", {
+        templateUrl : "aboutus.html"
+    })
+    .when("/vendor", {
+        templateUrl : "index.html"
+    })
+    .when("/contact", {
+        templateUrl : "contact.html"
+    });
+    .when("/blog", {
+        templateUrl : "blog1.html"
+    });
+    .when("/login", {
+        templateUrl : "signup.html"
+    });
+
+});
+
+
+
+</script>
+<!-- <div class="navbar" id="myTopnav">
+<h3 style="">India's Favourite wedding planning website</h3>  
+</div>
+<div class="topnav">
+	<a href="#" >home</a>
+	<a href="#" >about</a>
+	<a href="#" >Vendors</a>
+  <a href="#">Photos</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+
+
+  </div> -->
+  <div class="nav_1">
+    <p class="nav_12" style="color: white;">India's Favourite Wedding Planning Platform</p>
+    <p class="nav_123">Write a Review</p>
+    <p class="nav_1234">Download App</p>
+  </div>
+  <!-- <div class="main_menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Vendors</a>
+      <a href="#">Photos</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>     
+    </ul>
+  </div> -->
+<div class="topnav">
+  <a href="demo.html">Home</a>
+  <a href="aboutus.html">About</a>
+<a href="index.html">Vendor</a>
+<a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+<a href="blog1.html">Blog</a>
+<a href="signup.html"><i class="fa fa-fw fa-user"></i>Login</a>
+
+</div>
+
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Your wedding,Your Way</h1>
+        <p>Find the best wedding vendors with thousands of trusted reviews</p>
+
+<button onclick="typeWriter()" style="font-family: Arial, Helvetica, sans-serif;background-color:#cc0066; border-style: none; opacity: 0.7; font-size: 17px; color: white;">Popular Searches</button>
+
+<p id="demo"></p>
+</div>
+</div>
+</div>
+
+
+  
+
+<h4>Find Vendor At Every Budget</h4>
+  <h5>photographers,venues,makeup Artist & more at your budget &  style.</h5>      
+<div class="container" >
+
+
+<div class="row" >                                     
+<div class="col-sm-3" style=" margin: 30px">                                                                    
+<img class="contain" src="images/wedven.jpg" style="height:300px;width: 330px; ">
+
+<a href="index.html"><button class="btn"><h6>Wedding Venue</h6></button></a>
+</div> 
+        
+
+       
+        
+<div class="col-sm-3" style="margin:30px;">
+<img cla-ss="contain" src="images/wed.png" style="height:300px;width: 330px; ">
+<a href="index.html"><button class="btn"><h6>Weeding photographers</h6></button></a>
+</div> 
+      
+
+
+       
+
+        
+<div class="col-sm-3" style="margin: 30px;">
+<img class="contain" src="images/mak.jpg" style="height:300px;width: 330px">
+<a href="index.html"><button class="btn"><h6> Bridal Makeup</h6></button></a>
+
+</div>
+</div> 
+
+
+
+<div class="row">                                     
+<div class="col-sm-3" style=" margin: 30px">                                                                    
+<img class="contain" src="images/img6.jpg" style="height:300px;width: 330px;">
+<a href="index.html"><button class="btn"><h6>Wedding Decorator</h6></button></a>
+</div> 
+        
+
+       
+        
+<div class="col-sm-3" style="margin:30px;">
+<img class="contain" src="images/brimak.jpg" style="height:300px;width: 330px; ">
+<a href="index.html"><button class="btn"><h6>Bridal Wear</h6></button></a>
+</div> 
+
+
+
+
+
+      
+
+
+       
+
+<div class="col-sm-3" style="margin: 30px;">
+<img class="contain" src="images/wedcard.jpg" style="height:300px;width: 330px">
+<a href="index.html"><button class="btn"><h6>Wedding Cards</h6></button></a>
+
+</div>
+
+     
+</div> 
+
+
+
+
+
+
+</div>
+
+
+ <a href="index.html"><button class="butt">Browse All Categories</button></a>
+
+
+
+
+<!-- <div class="large">
+
+<div class="box">
+  <div class="page"></div>
+  <p>Views Our Venues <br>Booking Services</p></div>
+      <button class="button">Click Here</button>
+</div>
+
+<div class="box1">
+    <div class="page1"></div> 
+    <button class="button1">Weeding</button>
+    </div>
+<div class="box2">
+    <div class="page2"></div>
+    <button class="btn2">Weeding</button>
+
+ -->
+
+<!-- </div> -->
+ <div class="part">
+  <h4>Hire Our Services To Help You Save</h4>
+  <h5>Choose from a range of inhouse services to help you plan better</h5>
+
+
+ <div class="part1">
+   <div class="page"></div>
+   <div class="po">Views Our Venues Booking <br>Services</div>
+   <a href="booking.html"><button class="button">Click Here</button></a>
+
+ </div>
+
+
+ <div class="part2">
+  <div class="page1"></div>
+  <div class="p1">Looking to plan your dream<br> wedding in your budget?</div>
+   <a href="index.html"><button class="button1">Yes I'm Interested</button></a>
+ </div>
+
+
+ <div class="part3">
+  <div class="p2">Family Makeup Services<br>At Minimum Cost</div>
+  <a href="aboutus.html"><button class="button2">Know More</button></a>
+  <a href="aboutus.html"><div class="page2"></div></a>
+ </div>  
+
+
+ </div>
+
+ <div class="footer">
+  <hr>
+  <div class="footer1">
+  <b>Plan your wedding with Us</b>
+  <p>This is an Indian Wedding Planning Website and app where you can find the best wedding vendors, with prices and reviews at the click of a button. Whether you are looking to hire wedding planners in India, or looking for the top photographers, or just some ideas and inspiration for your wedding. WedMeGood can help you solve your wedding planning woes through its unique features. With a checklist, detailed vendor list, inspiration gallery and blog - you won't need to spend hours planning a wedding anymore.</p>  
+    <img src="images/capture.png">
+</div>
+  <div class="footer5">
+    <h3>Get Latest Blog Alerts</h3>
+    <input type="text" name="Email" placeholder="Email*" style="height: 50px;width:500px; padding-left: 10px; "><input type="submit" name="submit" value="submit" style="color:white;float: left;height: 50px;margin-left: 500px; margin-top: -50px; width: 90px;background-color: #cc0066; border-style: none;">
+    <br>
+    <br>
+    <img src="images/follow.png">
+
+    <a href="index.html"><input type="submit" name="submit" value="submit Weeding" style="color:white;float: left;height: 50px; width:200px; padding: 10px;height: 60px ;background-color: #cc0066; margin-top: 20px; border-style: none;"></a>
+    <a href="index.html"><input type="submit" name="submit" value="Register as a vendor"    style="color:white;float: left;height: 50px; width:200px; padding: 10px;height: 60px ;background-color: blue; margin-top: 20px; border-style: none; margin-left: 300px; margin-top: -60px;"></a>
+
+
+
+
+
+
+  </div>
+
+    
+
+  </div>
+
+ </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

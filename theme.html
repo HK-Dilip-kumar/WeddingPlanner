@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style >
+	*{
+margin:0px;
+padding:0px;
+}
+
+body{
+  font-family: sans-serif;
+}
+.navbar
+{
+	background-color:#cc0066 ;
+	padding: 2px 0;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	height:30px;
+	width:100%;
+    
+}
+.topnav
+{
+  
+	background-color:#eb75a4;
+    overflow: hidden;
+
+}
+.topnav a 
+{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding:13px 32px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover
+ {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active 
+{
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon
+{
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.details
+{
+height:400px;
+width:100%;
+}
+#div1
+{
+height:800px;
+width:600px;
+border-style:groove;
+background-image:url(../Image/theme4.jpg);
+border-radius:10%;
+border-width:thick;
+}
+
+#div2
+{
+height:800px;
+width:560px;
+border-style:groove;
+margin-top:-820px;
+margin-left:700px;
+background-image:url(../Image/theme5.jpg);
+border-radius:10%;
+border-width:thick;
+
+}
+#text1
+{
+height:200px;
+width:600px;
+border-radius:groove;
+margin-top:0px;
+margin-bottom:20px;
+float:right;
+
+}
+
+
+
+
+</style>
+</head>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div4").fadeIn();
+$("#div5").fadeIn("fast");
+$("#div6").fadeIn(7000,fun1());
+$("#div5").fadeIn("fast");
+});
+});
+function fun1()
+{
+$("#p1").text("Hello");
+}
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div7").fadeIn();
+$("#div8").fadeIn("fast");
+$("#div9").fadeIn(7000,fun1());
+$("#div8").fadeIn("fast");
+$("#div9").fadeIn("fast");
+});
+});
+function fun1()
+{
+$("#p1").text("Hello");
+}
+</script>
+<style>
+.id1
+{
+border-style:groove;
+border-width:20px;
+}
+</style>
+
+<script>
+var i=0;
+var image=[];
+var time=1000;
+image[0]="Image/theme15.jpg";
+image[1]="Image/theme11.jpg";
+image[2]="Image/theme20.jpg";
+image[3]="Image/theme13.jpg";
+function change()
+{
+document.slide.src=image[i];
+if(i<image.length-1)
+{
+i++;
+}
+else
+{
+i=0;
+}
+setTimeout("change()",time);
+}
+window.onload=change;
+</script>
+<body >
+<div class="navbar" id="myTopnav">
+<h3>India's Favourite wedding planning website</h3>  
+</div>
+<div class="topnav">
+	<a href="#" >Home</a>
+	<a href="#" >About</a>
+	<a href="#" >Vendors</a>
+    <a href="#">Photos</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+	<a href="#">Blog</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<br />
+<br />
+<br />
+<p style="margin-left:360px;color:#333333;"><font size="+3"; font-family: "Times New Roman", Times, serif;><b>Welcome To Our Wedding Theme Corner</b></font></p>
+<img id="id1" name="slide" style="width:1250px; height:500px;" />
+<br />
+<br />
+<br />
+<div id="div1">
+
+</div>
+<div id="div2">
+</div>
+<div id="div3">
+</div>
+<br />
+<br />
+<button style="width:600px;height:40px;background-color:#9900FF;color:#000000;margin-right:-500px;border-2px solid black;"><b>Click Here To see the Theme</b></button>
+<div id="div4" style="width:200px;height:20px;display:none;background-color:#9900CC;float:right;">
+</div>
+<div id="div5" style="width:200px;height:20px;display:none;background-color:#FF00FF;float:right;">
+</div>
+<div id="div6" style="width:200px;height:20px;display:none;background-color:#FF99FF;;float:right;">
+</div>
+<br />
+<div id="div7" style="width:200px;height:20px;display:none;background-color:#990000;float:right;">
+</div>
+<div id="div8" style="width:200px;height:20px;display:none;background-color:#CC0033;float:right;">
+</div>
+<div id="div9" style="width:200px;height:20px;display:none;background-color:#FF0033;float:right;">
+</div>
+<br />
+<br />
+<img src="Image/colortheme.jpg" style="border-radius:10%;margin-left:22px;"/>
+<div id="text1">
+<br />
+<br />
+<font size="+3" style="color:#9900CC;family:consolas;margin-right:20px;"><strong>Choose Any Of the theme and Tell Us</strong></font>
+</div>
+<button style="background-color:#990099;color:#FFFFFF;padding:10px;border:2px solid black;float:right;margin-right:320px;margin-top:-130px;height:70px;width:300px;margin-left:-70px;"><font size="+2">Contact Us</font></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

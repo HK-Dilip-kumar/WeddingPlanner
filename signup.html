@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Teko&display=swap" rel="stylesheet">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/regform.css">
+
+
+	<script >
+	function validate()
+		{
+			
+			name1=document.getElementById('name2').value;
+			mobno2=document.getElementById('mobno2').value;
+			
+			email1=document.getElementById('email2').value;
+			pass1=document.getElementById('pass2').value;
+			cpass1=document.getElementById('cpass2').value;
+			
+			atposition=email1.indexOf("@");  
+			dotposition=email1.lastIndexOf(".");
+
+
+
+	if(name1==0 || mobno2==0 || email1==0 || pass1==0 || cpass1==0)
+			{
+				alert("Please fill in the details");
+			}	
+	        else if(isNaN(name1)==0)
+			{
+				alert("Name cannot be only numeric");
+			}
+			else if(isNaN(mobno2)==1)
+			{
+				alert("	MobileNo can only be numeric");
+			}
+			else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email1.length)
+			{  
+				alert("Please enter a valid email address");
+			} 
+			else if (pass1!=cpass1) 
+			{
+				alert("Password doesn't match");
+			}
+			else
+			{
+				alert("Login Successful");
+			}
+		}
+	</script>
+</head>
+<body>
+
+
+	<form id="frm" method="post" name="form">
+		<h1>Login Here</h1> <hr class="hrr">
+		<h3> Name</h3><input type="text" placeholder="Enter Name" class="row-details" id="name2" ><br>
+		<h3>Mobile no</h3><input type="tel" pattern="[0-9]{1-7}" placeholder="Enter Mobile No" class="row-details" id="mobno2"></br>
+		<h3>Email</h3><input type="Email" placeholder="Enter Email" class="row-details" id="email2">
+		<h3>Password</h3><input type="password" placeholder="Enter Password" class="row-details" id="pass2"><br>
+		<h3>Confirm Password</h3><input type="password" placeholder="Re-enter Password" id="cpass2" class="row-details"><br><br><br>
+		<input type="Submit" value="Create Account" id="signup2" onClick="validate()"><br><br>
+		<a href="demo.html"><input type="button" value="Home" id="home"></a><br><br>
+	</form>
+
+</body>
+</html>
